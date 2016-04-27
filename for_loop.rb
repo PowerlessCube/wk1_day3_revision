@@ -1,0 +1,40 @@
+users = {
+  "Jonathan" => {
+    :twitter => "jonnyt",
+    :favourite_numbers => [12, 42, 75, 12, 5],
+    :home_town => "Stirling",
+    :pets => {
+      "fluffy" => :cat,
+      "fido" => :dog,
+      "spike" => :dog
+    }
+  },
+  "Erik" => {
+    :twitter => "eriksf",
+    :favorite_numbers => [8, 12, 24],
+    :home_town => "Linlithgow",
+    :pets => {
+      "blinky" => :fish,
+      "kevin" => :fish,
+      "spike" => :dog,
+      "fang" => :parrot
+    }
+  },
+  "Anil" => {
+    :twitter => "bridgpally",
+    :favorite_numbers => [12, 14, 85, 88],
+    :home_town => "Dunbar",
+    :pets => {
+      :colin => :snake
+    }
+  },
+}
+
+erik_array = []
+for num in users["Erik"][:favorite_numbers]
+    if num % 2 == 0
+      erik_array.push(num)
+    end
+end
+
+puts erik_array
